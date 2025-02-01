@@ -11,8 +11,12 @@
   "dependencies": {
     "@auth/unstorage-adapter": "^2.7.4",
     "@contentful/rich-text-react-renderer": "^16.0.1",
+    "@neondatabase/serverless": "^0.10.4",
+    "drizzle-orm": "^0.39.1",
+    "nanoid": "^5.0.9",
     "next": "15.1.6",
     "next-auth": "^5.0.0-beta.25",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "unstorage": "^1.14.4"
@@ -23,6 +27,8 @@
     "@types/node": "^22.10.5",
     "@types/react": "^19.0.5",
     "@types/react-dom": "^19.0.3",
+    "dotenv": "^16.4.7",
+    "drizzle-kit": "^0.30.4",
     "eslint": "^9.18.0",
     "eslint-config-next": "15.1.4",
     "eslint-config-prettier": "^10.0.1",

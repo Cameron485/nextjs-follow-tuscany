@@ -29,14 +29,19 @@ export default function TermsAcceptanceForm() {
         <h2 className="mb-4 text-xl font-semibold text-gray-800">
           Accept Terms & Conditions
         </h2>
+        <p className="my-2">
+          To send an email to the person you want to accept the terms and
+          conditions, please enter their email address below.
+        </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            placeholder="Enter your email"
+            placeholder="Enter the persons email address"
             className="w-full rounded-lg border p-2 focus:border-blue-500 focus:outline-none"
+            pattern="/^[^\s@]+@[^\s@]+\.[^\s@]+$/"
           />
           <button
             type="submit"
